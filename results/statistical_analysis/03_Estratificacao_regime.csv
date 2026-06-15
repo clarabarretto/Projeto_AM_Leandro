@@ -1,0 +1,4 @@
+regime,AutoGluon_Default,AutoGluon_Extreme,CatBoost_TD,CatBoost_Tuned,LightGBM_TD,LightGBM_Tuned,TabICL,XGBoost_TD,XGBoost_Tuned
+large,0.8879,0.8674,0.8589,0.8532,0.8422,0.8628,0.8632,0.8497,0.859
+medium,0.9325,0.945,0.9345,0.9354,0.9332,0.9245,0.9427,0.9231,0.9283
+small,0.8436,0.862,0.8309,0.8579,0.842,0.8623,0.8702,0.8339,0.8581

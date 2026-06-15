@@ -1,0 +1,77 @@
+[project]
+name = "projeto-final-am-template"
+version = "0.1.0"
+description = "Repositorio-template do Projeto Final de Aprendizagem de Maquina (pos-graduacao)"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Disciplina de Aprendizagem de Maquina, Pos-Graduacao" },
+]
+
+dependencies = [
+    "numpy>=1.26,<3.0",
+    "pandas>=2.2,<4.0",
+    "scikit-learn>=1.5,<2.0",
+    "scipy>=1.13,<2.0",
+    "matplotlib>=3.8,<4.0",
+    "seaborn>=0.13,<1.0",
+
+    # baselines e wrappers sklearn
+    "pytabkit[models]>=1.7,<2.0",
+    "lightgbm>=4.3,<5.0",
+    "xgboost>=2.0,<4.0",
+    "catboost>=1.2,<2.0",
+
+    # foundation models e modelos recentes
+    "tabpfn>=2.0,<8.0",
+    "tabicl>=2.0,<3.0",
+    "xrfm>=0.4,<1.0",
+    "deeptab>=1.5,<2.0",
+    "pytorch-frame>=0.2,<1.0",
+    "interpret>=0.7,<1.0",
+
+    # AutoML
+    "autogluon.tabular[all]>=1.4,<2.0",
+
+    # tuning
+    "optuna>=3.6,<5.0",
+
+    # estatistica
+    "autorank>=1.2,<2.0",
+    "baycomp>=1.0,<2.0",
+
+    # benchmark loader
+    "openml>=0.14,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<10.0",
+    "ruff>=0.5,<1.0",
+    "jupyter>=1.0,<2.0",
+    "ipykernel>=6.29,<7.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0,<10.0",
+    "ruff>=0.5,<1.0",
+    "jupyter>=1.0,<2.0",
+    "ipykernel>=6.29,<7.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

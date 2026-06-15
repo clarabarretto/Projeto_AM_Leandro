@@ -1,0 +1,207 @@
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Regime Small}
+\label{tab:res_small}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.8056 $\pm$ 0.0328 & 0.7679 $\pm$ 0.0276 & 0.6273 $\pm$ 0.0405 & 0.4700 $\pm$ 0.0060 & 12.4250 $\pm$ 11.3150 \\
+LightGBM\_TD & 0.8423 $\pm$ 0.1418 & 0.8251 $\pm$ 0.1452 & 0.7703 $\pm$ 0.1987 & 0.4184 $\pm$ 0.3355 & 0.3033 $\pm$ 0.3782 \\
+XGBoost\_TD & 0.8346 $\pm$ 0.1504 & 0.8235 $\pm$ 0.1468 & 0.7578 $\pm$ 0.2086 & 0.4452 $\pm$ 0.3810 & 1.0633 $\pm$ 0.7852 \\
+CatBoost\_TD & 0.8313 $\pm$ 0.1565 & 0.8334 $\pm$ 0.1446 & 0.7524 $\pm$ 0.2190 & 0.3912 $\pm$ 0.3349 & 17.1100 $\pm$ 9.5178 \\
+AutoGluon\_Default & 0.8491 $\pm$ 0.1224 & 0.7705 $\pm$ 0.0140 & 0.4294 $\pm$ 0.3737 & 0.5758 $\pm$ 0.1558 & 1437.4433 $\pm$ 1461.1701 \\
+LightGBM\_Tuned & 0.8595 $\pm$ 0.1317 & 0.8441 $\pm$ 0.1292 & 0.7353 $\pm$ 0.2361 & 0.3403 $\pm$ 0.2603 & 10.8567 $\pm$ 8.6516 \\
+XGBoost\_Tuned & 0.8593 $\pm$ 0.1309 & 0.8424 $\pm$ 0.1338 & 0.7191 $\pm$ 0.2569 & 0.3286 $\pm$ 0.2676 & 27.2467 $\pm$ 13.6742 \\
+CatBoost\_Tuned & 0.8591 $\pm$ 0.1260 & 0.8482 $\pm$ 0.1344 & 0.7496 $\pm$ 0.2181 & 0.3385 $\pm$ 0.2817 & 261.1533 $\pm$ 13.2798 \\
+AutoGluon\_Extreme\_4h & 0.8628 $\pm$ 0.1255 & 0.8423 $\pm$ 0.1393 & 0.7300 $\pm$ 0.2473 & 0.5076 $\pm$ 0.0584 & 14444.6633 $\pm$ 32.5762 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Regime Medium}
+\label{tab:res_medium}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.9425 $\pm$ 0.0740 & 0.9191 $\pm$ 0.1049 & 0.7554 $\pm$ 0.3164 & 0.1994 $\pm$ 0.2475 & 7.1865 $\pm$ 11.6278 \\
+LightGBM\_TD & 0.9325 $\pm$ 0.0834 & 0.9083 $\pm$ 0.1119 & 0.7385 $\pm$ 0.3154 & 0.2984 $\pm$ 0.3704 & 1.7771 $\pm$ 3.8482 \\
+XGBoost\_TD & 0.9222 $\pm$ 0.0923 & 0.9086 $\pm$ 0.1060 & 0.7485 $\pm$ 0.3065 & 0.2806 $\pm$ 0.3165 & 0.5782 $\pm$ 0.5632 \\
+CatBoost\_TD & 0.9346 $\pm$ 0.0807 & 0.9084 $\pm$ 0.1104 & 0.7447 $\pm$ 0.3100 & 0.2407 $\pm$ 0.2776 & 14.2624 $\pm$ 8.7791 \\
+AutoGluon\_Default & 0.9248 $\pm$ 0.0878 & 0.9000 $\pm$ 0.1227 & 0.6730 $\pm$ 0.3960 & 0.2512 $\pm$ 0.2747 & 1349.1765 $\pm$ 1095.7133 \\
+LightGBM\_Tuned & 0.9241 $\pm$ 0.0892 & 0.9114 $\pm$ 0.1081 & 0.7472 $\pm$ 0.3121 & 0.2668 $\pm$ 0.2589 & 178.5612 $\pm$ 436.9737 \\
+XGBoost\_Tuned & 0.9306 $\pm$ 0.0784 & 0.9105 $\pm$ 0.1088 & 0.7520 $\pm$ 0.3067 & 0.2414 $\pm$ 0.2885 & 91.1965 $\pm$ 118.5494 \\
+CatBoost\_Tuned & 0.9359 $\pm$ 0.0766 & 0.9091 $\pm$ 0.1058 & 0.7442 $\pm$ 0.3075 & 0.2348 $\pm$ 0.2491 & 323.0129 $\pm$ 174.2245 \\
+AutoGluon\_Extreme\_4h & 0.9453 $\pm$ 0.0699 & 0.9157 $\pm$ 0.1009 & 0.7557 $\pm$ 0.3102 & 0.2878 $\pm$ 0.3888 & 14464.2382 $\pm$ 57.8431 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Regime Large}
+\label{tab:res_large}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.8629 $\pm$ 0.1616 & 0.9357 $\pm$ 0.1186 & 0.5585 $\pm$ 0.4618 & 0.1677 $\pm$ 0.2593 & 125.8050 $\pm$ 276.4557 \\
+LightGBM\_TD & 0.8420 $\pm$ 0.1538 & 0.9284 $\pm$ 0.1159 & 0.4555 $\pm$ 0.4377 & 0.2254 $\pm$ 0.2524 & 1.6600 $\pm$ 1.5926 \\
+XGBoost\_TD & 0.8418 $\pm$ 0.1676 & 0.9298 $\pm$ 0.1183 & 0.4711 $\pm$ 0.4300 & 0.1911 $\pm$ 0.2542 & 0.8290 $\pm$ 0.7095 \\
+CatBoost\_TD & 0.8532 $\pm$ 0.1560 & 0.9310 $\pm$ 0.1184 & 0.4378 $\pm$ 0.4528 & 0.1834 $\pm$ 0.2560 & 13.7000 $\pm$ 11.4826 \\
+AutoGluon\_Default & 0.8337 $\pm$ 0.1536 & 0.9282 $\pm$ 0.1171 & 0.3913 $\pm$ 0.4183 & 0.1959 $\pm$ 0.2503 & 1525.3289 $\pm$ 847.4121 \\
+LightGBM\_Tuned & 0.8554 $\pm$ 0.1550 & 0.9322 $\pm$ 0.1174 & 0.4708 $\pm$ 0.4399 & 0.1834 $\pm$ 0.2515 & 222.0350 $\pm$ 257.4562 \\
+XGBoost\_Tuned & 0.8454 $\pm$ 0.1522 & 0.9246 $\pm$ 0.1149 & 0.5164 $\pm$ 0.4187 & 0.2019 $\pm$ 0.2450 & 130.3811 $\pm$ 125.5904 \\
+CatBoost\_Tuned & 0.8555 $\pm$ 0.1556 & 0.9318 $\pm$ 0.1179 & 0.4600 $\pm$ 0.4469 & 0.2101 $\pm$ 0.2525 & 279.7610 $\pm$ 57.8396 \\
+AutoGluon\_Extreme\_4h & 0.8639 $\pm$ 0.1577 & 0.9268 $\pm$ 0.1300 & 0.3081 $\pm$ 0.4665 & 0.3305 $\pm$ 0.3777 & 14912.5790 $\pm$ 585.6079 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Datasets Binário}
+\label{tab:res_binário}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.8562 $\pm$ 0.1243 & 0.9087 $\pm$ 0.0933 & 0.6146 $\pm$ 0.3615 & 0.2233 $\pm$ 0.1843 & 87.2573 $\pm$ 228.8566 \\
+LightGBM\_TD & 0.8419 $\pm$ 0.1279 & 0.9014 $\pm$ 0.1002 & 0.6199 $\pm$ 0.3416 & 0.2668 $\pm$ 0.2253 & 0.7027 $\pm$ 0.7069 \\
+XGBoost\_TD & 0.8322 $\pm$ 0.1372 & 0.8993 $\pm$ 0.1017 & 0.6259 $\pm$ 0.3318 & 0.2907 $\pm$ 0.2539 & 0.5753 $\pm$ 0.5707 \\
+CatBoost\_TD & 0.8422 $\pm$ 0.1280 & 0.9020 $\pm$ 0.0998 & 0.6025 $\pm$ 0.3605 & 0.2525 $\pm$ 0.2168 & 21.1720 $\pm$ 8.4415 \\
+AutoGluon\_Default & 0.8286 $\pm$ 0.1221 & 0.8882 $\pm$ 0.1089 & 0.4788 $\pm$ 0.3893 & 0.2646 $\pm$ 0.2018 & 1430.8153 $\pm$ 1060.2139 \\
+LightGBM\_Tuned & 0.8479 $\pm$ 0.1243 & 0.9063 $\pm$ 0.0933 & 0.6226 $\pm$ 0.3379 & 0.2549 $\pm$ 0.1929 & 62.4800 $\pm$ 69.8540 \\
+XGBoost\_Tuned & 0.8538 $\pm$ 0.1234 & 0.9050 $\pm$ 0.0943 & 0.6132 $\pm$ 0.3482 & 0.2320 $\pm$ 0.1832 & 43.4647 $\pm$ 35.8443 \\
+CatBoost\_Tuned & 0.8503 $\pm$ 0.1217 & 0.9067 $\pm$ 0.0924 & 0.6197 $\pm$ 0.3445 & 0.2513 $\pm$ 0.1854 & 266.5800 $\pm$ 35.0311 \\
+AutoGluon\_Extreme\_4h & 0.8592 $\pm$ 0.1206 & 0.9068 $\pm$ 0.0919 & 0.5348 $\pm$ 0.3993 & 0.2495 $\pm$ 0.1772 & 14649.7427 $\pm$ 509.0847 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Datasets Multiclasse}
+\label{tab:res_multiclasse}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.9483 $\pm$ 0.0909 & 0.9103 $\pm$ 0.1339 & 0.7393 $\pm$ 0.3616 & 0.2085 $\pm$ 0.3082 & 7.2423 $\pm$ 10.7894 \\
+LightGBM\_TD & 0.9446 $\pm$ 0.0913 & 0.9120 $\pm$ 0.1327 & 0.6748 $\pm$ 0.4047 & 0.3052 $\pm$ 0.4109 & 2.4787 $\pm$ 4.0971 \\
+XGBoost\_TD & 0.9410 $\pm$ 0.0971 & 0.9150 $\pm$ 0.1277 & 0.6880 $\pm$ 0.3966 & 0.2438 $\pm$ 0.3497 & 0.8453 $\pm$ 0.6836 \\
+CatBoost\_TD & 0.9522 $\pm$ 0.0879 & 0.9149 $\pm$ 0.1321 & 0.6838 $\pm$ 0.4002 & 0.2208 $\pm$ 0.3254 & 7.5473 $\pm$ 4.1262 \\
+AutoGluon\_Default & 0.9451 $\pm$ 0.0895 & 0.9047 $\pm$ 0.1348 & 0.6306 $\pm$ 0.4327 & 0.2658 $\pm$ 0.3370 & 1402.6260 $\pm$ 1014.0618 \\
+LightGBM\_Tuned & 0.9415 $\pm$ 0.0964 & 0.9169 $\pm$ 0.1309 & 0.6851 $\pm$ 0.4042 & 0.2378 $\pm$ 0.3079 & 290.0840 $\pm$ 485.3656 \\
+XGBoost\_Tuned & 0.9363 $\pm$ 0.0953 & 0.9118 $\pm$ 0.1296 & 0.7272 $\pm$ 0.3563 & 0.2420 $\pm$ 0.3362 & 152.2614 $\pm$ 143.1085 \\
+CatBoost\_Tuned & 0.9526 $\pm$ 0.0865 & 0.9145 $\pm$ 0.1300 & 0.6803 $\pm$ 0.4016 & 0.2225 $\pm$ 0.3019 & 338.2393 $\pm$ 184.7561 \\
+AutoGluon\_Extreme\_4h & 0.9606 $\pm$ 0.0852 & 0.9173 $\pm$ 0.1341 & 0.6731 $\pm$ 0.4275 & 0.3985 $\pm$ 0.4801 & 14573.7127 $\pm$ 243.3457 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Maioria Categórica}
+\label{tab:res_categórica}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.8571 $\pm$ 0.1414 & 0.8907 $\pm$ 0.1395 & 0.5491 $\pm$ 0.4021 & 0.2459 $\pm$ 0.2909 & 105.3672 $\pm$ 293.6118 \\
+LightGBM\_TD & 0.8553 $\pm$ 0.1426 & 0.9083 $\pm$ 0.1377 & 0.4631 $\pm$ 0.4351 & 0.2662 $\pm$ 0.2927 & 0.7622 $\pm$ 0.5561 \\
+XGBoost\_TD & 0.8414 $\pm$ 0.1492 & 0.9094 $\pm$ 0.1425 & 0.4752 $\pm$ 0.4291 & 0.2283 $\pm$ 0.3221 & 0.4589 $\pm$ 0.2953 \\
+CatBoost\_TD & 0.8642 $\pm$ 0.1471 & 0.9122 $\pm$ 0.1398 & 0.4550 $\pm$ 0.4399 & 0.2139 $\pm$ 0.3022 & 12.1889 $\pm$ 8.9086 \\
+AutoGluon\_Default & 0.8531 $\pm$ 0.1372 & 0.8880 $\pm$ 0.1425 & 0.3563 $\pm$ 0.4111 & 0.2973 $\pm$ 0.3232 & 1136.1989 $\pm$ 866.4667 \\
+LightGBM\_Tuned & 0.8471 $\pm$ 0.1424 & 0.9140 $\pm$ 0.1363 & 0.4833 $\pm$ 0.4332 & 0.2248 $\pm$ 0.2877 & 79.9856 $\pm$ 84.3158 \\
+XGBoost\_Tuned & 0.8457 $\pm$ 0.1337 & 0.9063 $\pm$ 0.1344 & 0.5371 $\pm$ 0.3959 & 0.2237 $\pm$ 0.2780 & 65.3035 $\pm$ 47.5822 \\
+CatBoost\_Tuned & 0.8694 $\pm$ 0.1443 & 0.9133 $\pm$ 0.1383 & 0.4756 $\pm$ 0.4333 & 0.2096 $\pm$ 0.2887 & 255.9011 $\pm$ 27.3809 \\
+AutoGluon\_Extreme\_4h & 0.8830 $\pm$ 0.1471 & 0.9079 $\pm$ 0.1455 & 0.4110 $\pm$ 0.4710 & 0.3363 $\pm$ 0.2934 & 14761.0400 $\pm$ 642.9783 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Maioria Numérica}
+\label{tab:res_numérica}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.9216 $\pm$ 0.1024 & 0.9176 $\pm$ 0.1031 & 0.7317 $\pm$ 0.3371 & 0.2031 $\pm$ 0.2365 & 22.3424 $\pm$ 49.9065 \\
+LightGBM\_TD & 0.9095 $\pm$ 0.1103 & 0.9060 $\pm$ 0.1087 & 0.7263 $\pm$ 0.3161 & 0.2945 $\pm$ 0.3461 & 1.9457 $\pm$ 3.5662 \\
+XGBoost\_TD & 0.9060 $\pm$ 0.1183 & 0.9062 $\pm$ 0.1030 & 0.7348 $\pm$ 0.3062 & 0.2840 $\pm$ 0.2984 & 0.8181 $\pm$ 0.7120 \\
+CatBoost\_TD & 0.9113 $\pm$ 0.1098 & 0.9069 $\pm$ 0.1069 & 0.7238 $\pm$ 0.3247 & 0.2464 $\pm$ 0.2656 & 15.2900 $\pm$ 9.8304 \\
+AutoGluon\_Default & 0.9013 $\pm$ 0.1134 & 0.9000 $\pm$ 0.1138 & 0.6398 $\pm$ 0.3910 & 0.2515 $\pm$ 0.2561 & 1536.9442 $\pm$ 1075.2053 \\
+LightGBM\_Tuned & 0.9151 $\pm$ 0.1051 & 0.9106 $\pm$ 0.1034 & 0.7269 $\pm$ 0.3193 & 0.2556 $\pm$ 0.2431 & 217.5519 $\pm$ 423.0166 \\
+XGBoost\_Tuned & 0.9162 $\pm$ 0.1041 & 0.9093 $\pm$ 0.1038 & 0.7272 $\pm$ 0.3233 & 0.2427 $\pm$ 0.2676 & 111.8171 $\pm$ 134.4881 \\
+CatBoost\_Tuned & 0.9152 $\pm$ 0.1027 & 0.9095 $\pm$ 0.1009 & 0.7247 $\pm$ 0.3205 & 0.2486 $\pm$ 0.2331 & 322.3419 $\pm$ 158.0779 \\
+AutoGluon\_Extreme\_4h & 0.9215 $\pm$ 0.1000 & 0.9138 $\pm$ 0.1003 & 0.6867 $\pm$ 0.3661 & 0.3188 $\pm$ 0.3964 & 14547.7367 $\pm$ 212.9233 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Com Valores Ausentes (NaNs)}
+\label{tab:res_nan_True}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.8479 $\pm$ 0.1519 & 0.9417 $\pm$ 0.0802 & 0.3887 $\pm$ 0.4366 & 0.1515 $\pm$ 0.1727 & 152.7031 $\pm$ 306.7034 \\
+LightGBM\_TD & 0.8677 $\pm$ 0.1585 & 0.9683 $\pm$ 0.0404 & 0.4424 $\pm$ 0.4535 & 0.1227 $\pm$ 0.1387 & 0.9537 $\pm$ 0.7491 \\
+XGBoost\_TD & 0.8335 $\pm$ 0.1684 & 0.9691 $\pm$ 0.0408 & 0.4578 $\pm$ 0.4508 & 0.1099 $\pm$ 0.1290 & 0.6687 $\pm$ 0.4765 \\
+CatBoost\_TD & 0.8720 $\pm$ 0.1529 & 0.9694 $\pm$ 0.0413 & 0.4336 $\pm$ 0.4685 & 0.0978 $\pm$ 0.1213 & 11.5337 $\pm$ 10.8205 \\
+AutoGluon\_Default & 0.8434 $\pm$ 0.1571 & 0.9415 $\pm$ 0.0818 & 0.3157 $\pm$ 0.4451 & 0.1947 $\pm$ 0.2551 & 1695.8725 $\pm$ 1144.7099 \\
+LightGBM\_Tuned & 0.8489 $\pm$ 0.1545 & 0.9699 $\pm$ 0.0392 & 0.4562 $\pm$ 0.4623 & 0.1101 $\pm$ 0.1118 & 91.4100 $\pm$ 83.0717 \\
+XGBoost\_Tuned & 0.8515 $\pm$ 0.1525 & 0.9708 $\pm$ 0.0399 & 0.4492 $\pm$ 0.4748 & 0.1038 $\pm$ 0.1216 & 64.2450 $\pm$ 39.3803 \\
+CatBoost\_Tuned & 0.8695 $\pm$ 0.1527 & 0.9698 $\pm$ 0.0410 & 0.4387 $\pm$ 0.4662 & 0.1294 $\pm$ 0.1421 & 265.2950 $\pm$ 36.1851 \\
+AutoGluon\_Extreme\_4h & 0.8763 $\pm$ 0.1566 & 0.9653 $\pm$ 0.0383 & 0.3181 $\pm$ 0.4608 & 0.2079 $\pm$ 0.1930 & 14789.6100 $\pm$ 672.4407 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados Agregados - Sem Valores Ausentes}
+\label{tab:res_nan_False}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Modelo} & \textbf{AUC-OVO} & \textbf{Acurácia} & \textbf{G-Mean} & \textbf{CE} & \textbf{Tempo (s)} \\
+\midrule
+TabICL & 0.9221 $\pm$ 0.0980 & 0.8978 $\pm$ 0.1228 & 0.7818 $\pm$ 0.2704 & 0.2393 $\pm$ 0.2720 & 8.9032 $\pm$ 12.1903 \\
+LightGBM\_TD & 0.9026 $\pm$ 0.1073 & 0.8843 $\pm$ 0.1263 & 0.7219 $\pm$ 0.3126 & 0.3454 $\pm$ 0.3559 & 1.8223 $\pm$ 3.5004 \\
+XGBoost\_TD & 0.9060 $\pm$ 0.1102 & 0.8846 $\pm$ 0.1237 & 0.7294 $\pm$ 0.3021 & 0.3245 $\pm$ 0.3269 & 0.7255 $\pm$ 0.6915 \\
+CatBoost\_TD & 0.9063 $\pm$ 0.1108 & 0.8863 $\pm$ 0.1258 & 0.7194 $\pm$ 0.3159 & 0.2871 $\pm$ 0.2955 & 15.3873 $\pm$ 9.0541 \\
+AutoGluon\_Default & 0.9027 $\pm$ 0.1045 & 0.8801 $\pm$ 0.1297 & 0.6416 $\pm$ 0.3719 & 0.2909 $\pm$ 0.2804 & 1315.2109 $\pm$ 978.7403 \\
+LightGBM\_Tuned & 0.9114 $\pm$ 0.1028 & 0.8904 $\pm$ 0.1224 & 0.7257 $\pm$ 0.3080 & 0.2959 $\pm$ 0.2726 & 207.1445 $\pm$ 415.6504 \\
+XGBoost\_Tuned & 0.9109 $\pm$ 0.0994 & 0.8857 $\pm$ 0.1208 & 0.7505 $\pm$ 0.2638 & 0.2854 $\pm$ 0.2892 & 110.0878 $\pm$ 132.7904 \\
+CatBoost\_Tuned & 0.9131 $\pm$ 0.1014 & 0.8891 $\pm$ 0.1208 & 0.7268 $\pm$ 0.3038 & 0.2760 $\pm$ 0.2669 & 315.9059 $\pm$ 155.7452 \\
+AutoGluon\_Extreme\_4h & 0.9221 $\pm$ 0.0972 & 0.8927 $\pm$ 0.1253 & 0.7079 $\pm$ 0.3489 & 0.3662 $\pm$ 0.4039 & 14547.0432 $\pm$ 217.1583 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+

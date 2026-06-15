@@ -1,0 +1,3 @@
+has_missing,AutoGluon_Default,AutoGluon_Extreme,CatBoost_TD,CatBoost_Tuned,LightGBM_TD,LightGBM_Tuned,TabICL,XGBoost_TD,XGBoost_Tuned
+No,0.9267,0.9313,0.9185,0.9219,0.911,0.9244,0.9291,0.9178,0.9225
+Yes,0.8829,0.8769,0.8736,0.862,0.8697,0.8478,0.873,0.8391,0.8543
